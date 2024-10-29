@@ -1,0 +1,21 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <title>Compilador de Planilhas</title>
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css">
+  </head>
+  <body>
+    <div class="container">
+      <h1 class="mt-5">Faça o Upload das suas planilhas</h1>
+      <form action="/upload" method="post" enctype="multipart/form-data">
+        <div class="form-group">
+          <label for="files">Escolha seus arquivos</label>
+          <input type="file" class="form-control-file" id="files" name="files[]" multiple>
+        </div>
+        <button type="submit" class="btn btn-primary">Compilar</button>
+      </form>
+    </div>
+  </body>
+</html>
